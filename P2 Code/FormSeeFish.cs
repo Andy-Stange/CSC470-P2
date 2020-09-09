@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace P2_Code
 {
-    public partial class Form1 : Form
+    public partial class FormSeeFish : Form
     {
-        public Form1()
+        public FormSeeFish()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
