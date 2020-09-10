@@ -46,14 +46,14 @@ namespace P2_Code
             // 
             // listBoxFish
             // 
-            this.listBoxFish.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxFish.Font = new System.Drawing.Font("Microsoft JhengHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxFish.FormattingEnabled = true;
             this.listBoxFish.Items.AddRange(new object[] {
             "Crappie",
             "Walleye",
             "Perch"});
             this.listBoxFish.Location = new System.Drawing.Point(67, 65);
-            this.listBoxFish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxFish.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxFish.Name = "listBoxFish";
             this.listBoxFish.Size = new System.Drawing.Size(182, 148);
             this.listBoxFish.TabIndex = 1;
@@ -66,7 +66,9 @@ namespace P2_Code
             this.Controls.Add(this.listBoxFish);
             this.Controls.Add(this.SeeFish);
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CSC470 - P2";
+            this.Load += new System.EventHandler(this.FormMain_Load_1);
             this.ResumeLayout(false);
 
         }

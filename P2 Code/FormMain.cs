@@ -20,8 +20,10 @@ namespace P2_Code
         
         private void FormMain_Load(object sender, EventArgs e)
         {
+
             this.CenterToScreen();
             Populatefish();
+
         }
 
         private void Populatefish()
@@ -72,9 +74,14 @@ namespace P2_Code
           //  }
 
         }
-  //      private void checkedListBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-  //      {
-           
-   //     }
+
+        private void FormMain_Load_1(object sender, EventArgs e)
+        {
+
+        }
+        //      private void checkedListBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        //      {
+
+        //     }
     }
 }

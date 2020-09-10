@@ -25,6 +25,7 @@ namespace P2_Code
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+
         }
         private void LoadPic()
         {
@@ -58,6 +59,11 @@ namespace P2_Code
         {
             MessageBox.Show("Decision is to Let it go!");
             Environment.Exit(0);
+
+        }
+
+        private void FormSeeFish_Load_1(object sender, EventArgs e)
+        {
 
         }
     }
