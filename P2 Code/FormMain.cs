@@ -17,14 +17,67 @@ namespace P2_Code
             InitializeComponent();
         }
 
+        
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            CenterToScreen();
+            Populatefish();
+        }
+
+        private void Populatefish()
+        {
+            listBoxFish.Items.Clear();
+            listBoxFish.Items.Add("Crappie");
+            listBoxFish.Items.Add("Walleye");
+            listBoxFish.Items.Add("Perch");
+            listBoxFish.SelectedIndex = 0;
+        }
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
-
         private void SeeFish_Click(object sender, EventArgs e)
         {
+                // Make sure a Fish is selected
+                if (listBoxFish.SelectedIndex >= 0)
+                {
+                    string selectedFish = listBoxFish.SelectedItem.ToString().Trim();
+                    // Open the form as a dialog
+                    FormSeeFish formFish = new FormSeeFish(selectedFish);
+                    DialogResult result = formFish.ShowDialog();
 
+                    // Check the dialog result
+                    if (result == DialogResult.OK)
+                    {
+                            
+                             if (formFish._SelectedFish == );
+                    
+                    }
+                    else
+                    {
+                        MessageBox.Show("No fish selected - dialog cancelled");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please selected a fish", "Attention");
+                }
+
+
+        }
+        private void LoadPic()
+        {
+            switch (_SelectedFish)
+            {
+                case selectedFish.Crappie:
+                    pictureBox1.Image = Properties.FishPics.Crappie
+                    break;
+            }
+
+        }
+        private void checkedListBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+           
         }
     }
 }
