@@ -20,7 +20,7 @@ namespace P2_Code
         
         private void FormMain_Load(object sender, EventArgs e)
         {
-            CenterToScreen();
+            this.CenterToScreen();
             Populatefish();
         }
 
@@ -32,10 +32,7 @@ namespace P2_Code
             listBoxFish.Items.Add("Perch");
             listBoxFish.SelectedIndex = 0;
         }
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
         private void SeeFish_Click(object sender, EventArgs e)
         {
                 // Make sure a Fish is selected
@@ -50,7 +47,7 @@ namespace P2_Code
                     if (result == DialogResult.OK)
                     {
                             
-                             if (formFish._SelectedFish == );
+                            //if (formFish._SelectedFish == );
                     
                     }
                     else
@@ -60,24 +57,24 @@ namespace P2_Code
                 }
                 else
                 {
-                    MessageBox.Show("Please selected a fish", "Attention");
+                    MessageBox.Show("Please selecte a fish", "Attention");
                 }
 
 
         }
         private void LoadPic()
         {
-            switch (_SelectedFish)
-            {
-                case selectedFish.Crappie:
-                    pictureBox1.Image = Properties.FishPics.Crappie
-                    break;
-            }
+ //           switch (_SelectedFish)
+  //          {
+    //            case selectedFish.Crappie:
+      //              pictureBox1.Image = Properties.FishPics.Crappie;
+        //            break;
+          //  }
 
         }
-        private void checkedListBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
+  //      private void checkedListBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+  //      {
            
-        }
+   //     }
     }
 }
